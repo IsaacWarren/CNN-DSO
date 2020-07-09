@@ -113,9 +113,9 @@ include_directories( ${CSPARSE_INCLUDE_DIR} ${CHOLMOD_INCLUDE_DIR})
 add_library(dso ${dso_SOURCE_FILES} ${dso_opencv_SOURCE_FILES} ${dso_pangolin_SOURCE_FILES})
 
 #TensorFlow and monodepth
-include_directories(/abosolute/path/to/tensorflow/local/include/google/tensorflow)
-include_directories(/abosolute/path/to/tensorflow/bazel-tensorflow/external/nsync/public)
-set(monodepth_INCLUDE_DIRS /abosolute/path/to/monodepth/install/include)
+include_directories(/App/tensorflow/local/include/google/tensorflow)
+include_directories(/App/tensorflow/bazel-tensorflow/external/nsync/public)
+set(monodepth_INCLUDE_DIRS /App/monodepth-cpp/install/include)
 INCLUDE_DIRECTORIES(${monodepth_INCLUDE_DIRS})
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin") # OSX

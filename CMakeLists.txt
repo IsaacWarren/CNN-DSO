@@ -129,7 +129,7 @@ endif()
 if (OpenCV_FOUND AND Pangolin_FOUND)
 	message("--- compiling dso_dataset.")
 	add_executable(dso_dataset ${PROJECT_SOURCE_DIR}/src/main_dso_pangolin.cpp )
-	target_link_libraries(dso_dataset dso boost_system cxsparse ${BOOST_THREAD_LIBRARY} ${LIBZIP_LIBRARY} ${Pangolin_LIBRARIES} ${OpenCV_LIBS} /home/hide/Downloads/1.6/tensorflow/local/lib/libtensorflow_cc.so)
+	target_link_libraries(dso_dataset dso boost_system cxsparse ${BOOST_THREAD_LIBRARY} ${LIBZIP_LIBRARY} ${Pangolin_LIBRARIES} ${OpenCV_LIBS} /App/tensorflow/local/lib/libtensorflow_all.so)
 	TARGET_LINK_LIBRARIES(dso_dataset /abosolute/path/to/monodepth-cpp/monodepth-lib/install/lib/libmonodepth_static.a)
 
 else()

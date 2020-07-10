@@ -16,7 +16,7 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 find_package(SuiteParse REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Boost COMPONENTS system thread) 
-set(EIGEN3_INCLUDE_DIR /App/tensorflow/bazel-tensorflow/external/eigen_archive/
+set(EIGEN3_INCLUDE_DIR /App/tensorflow/bazel-tensorflow/external/eigen_archive/)
 
 # optional libraries
 find_package(LibZip QUIET)
